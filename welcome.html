@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .typing-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3em;
+            white-space: nowrap;
+            border-right: 2px solid;
+            width: 0;
+            overflow: hidden;
+            animation: typing 3s steps(11) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 11ch; /* "Welcome" has 7 characters, plus 4 spaces for padding */
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="typing-text">Welcome</h1>
+</body>
+
+</html>
